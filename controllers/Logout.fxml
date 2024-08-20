@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#backToLogin" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LogoutSceneController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="100.0" prefWidth="1000.0">
+         <children>
+            <Label fx:id="welcome" alignment="CENTER" maxHeight="-Infinity" prefHeight="47.0" prefWidth="274.0" text="Welcome to Heng Huat Stock Management System" textAlignment="CENTER" />
+         </children>
+      </VBox>
+     <VBox alignment="CENTER" prefHeight="100.0" prefWidth="1000.0">
+         <children>
+            <Label fx:id="rolex" alignment="CENTER" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="400.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="400.0" prefWidth="500.0">
+               <children>
+                  <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" prefHeight="258.0" prefWidth="453.0" text="[NAME] : Logout Successful. Thank you!">
+                     <padding>
+                        <Insets bottom="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <TextField onKeyPressed="#backToLogin" opacity="0.0" prefHeight="0.0" prefWidth="0.0" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>
